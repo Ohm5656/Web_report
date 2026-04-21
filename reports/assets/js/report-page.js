@@ -3,6 +3,7 @@ const year = Number(params.get("year")) || 2024;
 const lang = params.get("lang") === "en" ? "en" : "th";
 
 const reportYears = {
+  2025: { growth: 18, projects: 42, satisfaction: 91, theme: "quality growth", revenue: 10830, profit: 1610, focus: "expanded digital services and improved customer experience" },
   2024: { growth: 15, projects: 39, satisfaction: 90, theme: "digital scale", revenue: 9180, profit: 1340, focus: "expanded customer data platform and improved service reliability" },
   2023: { growth: 11, projects: 34, satisfaction: 88, theme: "operational resilience", revenue: 8420, profit: 1120, focus: "strengthened operating discipline and partner coverage" },
   2022: { growth: 9, projects: 31, satisfaction: 86, theme: "business recovery", revenue: 7590, profit: 960, focus: "rebuilt demand through enterprise service packages" },
@@ -113,6 +114,7 @@ function formatNumber(value) {
 function toThaiFocus(focus) {
   const map = {
     "expanded customer data platform and improved service reliability": "การขยายแพลตฟอร์มข้อมูลลูกค้าและยกระดับความน่าเชื่อถือของบริการ",
+    "expanded digital services and improved customer experience": "การขยายบริการดิจิทัลและยกระดับประสบการณ์ลูกค้า",
     "strengthened operating discipline and partner coverage": "การเพิ่มวินัยด้านการดำเนินงานและขยายเครือข่ายพันธมิตร",
     "rebuilt demand through enterprise service packages": "การฟื้นตัวของความต้องการผ่านชุดบริการสำหรับลูกค้าองค์กร",
     "supported customers through hybrid work and remote operations": "การสนับสนุนลูกค้าในรูปแบบการทำงาน hybrid และ remote operations",
