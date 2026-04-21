@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Annual Report | Nova Group</title>
+    <meta name="description" content="Online annual report for Nova Group.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/report.css">
+  </head>
+  <body>
+    <header class="site-header report-header">
+      <a class="brand" href="index.html" aria-label="Back to annual reports">
+        <span class="brand-mark" aria-hidden="true"></span>
+        <span>Nova Group</span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="primary-nav">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span class="sr-only">Open navigation</span>
+      </button>
+      <nav class="primary-nav" id="primary-nav" aria-label="Report navigation">
+        <a href="#summary">Summary</a>
+        <a href="#message">Message</a>
+        <a href="#metrics">Metrics</a>
+        <a id="language-link" href="#">Switch language</a>
+        <a class="nav-home" href="index.html">All reports</a>
+      </nav>
+    </header>
+
+    <main id="dynamic-report">
+      <section class="report-hero" aria-labelledby="report-title">
+        <img src="assets/images/hero-corporate.png" alt="Corporate team reviewing the annual report">
+        <div class="report-hero__content">
+          <p class="eyebrow" id="report-language">Annual Report</p>
+          <h1 id="report-title">Annual Report</h1>
+          <p id="report-subtitle"></p>
+          <div class="hero-actions">
+            <a class="button button-primary" id="download-top" href="#" download>Download PDF</a>
+            <a class="button button-secondary" href="index.html">Back to Reports</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="report-summary" id="summary" aria-labelledby="summary-title">
+        <div class="summary-copy">
+          <p class="eyebrow" id="summary-eyebrow">Overview</p>
+          <h2 id="summary-title">Year in Review</h2>
+          <p id="summary-copy-1"></p>
+          <p id="summary-copy-2"></p>
+        </div>
+        <div class="metric-strip" aria-label="Key summary metrics">
+          <div>
+            <strong id="metric-growth">0%</strong>
+            <span id="metric-growth-label">Revenue growth</span>
+          </div>
+          <div>
+            <strong id="metric-projects">0</strong>
+            <span id="metric-projects-label">Strategic projects</span>
+          </div>
+          <div>
+            <strong id="metric-satisfaction">0%</strong>
+            <span id="metric-satisfaction-label">Customer satisfaction</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="report-section editorial-section" id="message" aria-labelledby="message-title">
+        <div class="portrait-panel">
+          <div class="portrait-placeholder" aria-hidden="true">CEO</div>
+        </div>
+        <div class="editorial-copy">
+          <p class="eyebrow" id="message-eyebrow">Message from CEO</p>
+          <h2 id="message-title">Message to Shareholders</h2>
+          <p id="message-copy-1"></p>
+          <p id="message-copy-2"></p>
+          <blockquote id="message-quote"></blockquote>
+        </div>
+      </section>
+
+      <section class="report-section split-section" aria-labelledby="company-title">
+        <div>
+          <p class="eyebrow">Company Overview</p>
+          <h2 id="company-title">Company Overview</h2>
+          <p id="company-copy"></p>
+        </div>
+        <div class="info-list" id="info-list"></div>
+      </section>
+
+      <section class="report-section performance-section" aria-labelledby="performance-title">
+        <div class="section-heading">
+          <p class="eyebrow">Business Performance</p>
+          <h2 id="performance-title">Performance by Business Unit</h2>
+          <p id="performance-intro"></p>
+        </div>
+        <div class="performance-grid" id="performance-grid"></div>
+      </section>
+
+      <section class="report-section highlights-section" aria-labelledby="highlights-title">
+        <p class="eyebrow">Annual Highlights</p>
+        <h2 id="highlights-title">Key Highlights</h2>
+        <div class="highlight-grid" id="highlight-grid"></div>
+      </section>
+
+      <section class="report-section metrics-section" id="metrics" aria-labelledby="metrics-title">
+        <div class="section-heading">
+          <p class="eyebrow">Financial and Key Metrics</p>
+          <h2 id="metrics-title">Key Metrics</h2>
+        </div>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr id="metrics-head"></tr>
+            </thead>
+            <tbody id="metrics-body"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="report-section future-section" aria-labelledby="future-title">
+        <div>
+          <p class="eyebrow">Strategy</p>
+          <h2 id="future-title">Future Direction</h2>
+        </div>
+        <p id="future-copy"></p>
+      </section>
+
+      <section class="download-band" aria-labelledby="download-title">
+        <p class="eyebrow">Full report</p>
+        <h2 id="download-title">Download the Full Report</h2>
+        <div class="hero-actions">
+          <a class="button button-primary" id="download-bottom" href="#" download>Download PDF</a>
+          <a class="button button-secondary" id="language-link-bottom" href="#">Switch language</a>
+          <a class="button button-secondary" href="index.html">All Reports</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div>
+        <a class="brand brand-footer" href="index.html">
+          <span class="brand-mark" aria-hidden="true"></span>
+          <span>Nova Group</span>
+        </a>
+        <p id="footer-report-label">Annual Report</p>
+      </div>
+      <div class="footer-links">
+        <a href="index.html">Annual reports</a>
+        <a id="footer-language-link" href="#">Switch language</a>
+        <span>&copy; 2026 Nova Group. All rights reserved.</span>
+      </div>
+    </footer>
+
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/report-page.js"></script>
+  </body>
+</html>
